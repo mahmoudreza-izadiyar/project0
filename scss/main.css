@@ -1,0 +1,84 @@
+body {
+  background-color: gray;
+}
+
+.border {
+  background-color: gray;
+  height: 20px;
+}
+
+.alert:hover {
+  font-weight: bold;
+}
+/* This part is for SASS page to made diffrent inheritence*/
+.news, .alerts, .happy {
+  font-size: 50;
+  font-family: sans-serif;
+  font-weight: bold;
+  border-radius: 25px;
+  border: 2px solid #73AD21;
+  padding: 20px;
+  width: auto;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.alerts {
+  border: 2px solid #e24801;
+}
+
+.happy {
+  border: 2px solid #1a2edf;
+}
+
+div ul {
+  font-size: 22px;
+}
+
+
+
+
+
+@media only screen and (max-width: 800px) {
+  .love1 {
+    visibility: hidden;
+  }
+}
+#love2{
+  font-size: 28px;
+  font-variant-caps: all-petite-caps;
+}
+
+
+
+
+
+
+#head {
+  text-align: center;
+}
+
+
+/*# sourceMappingURL=main.css.map */
+
+
+/* this is the div that contained  3 paints and i want to wrap all paints in same scale */
+.paints{
+
+  
+  width: 200px;
+  height: 400px;
+  object-fit: cover;
+
+}
+#ramb {
+  max-height: 60%;
+  max-width: 90%;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border: 2px solid rgb(44,44,44);
+}

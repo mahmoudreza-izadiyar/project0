@@ -1,0 +1,87 @@
+// this part is for variables//
+$love: gray;
+
+body{
+ background-color: $love;
+}
+
+.border{
+    background-color: $love;
+    height: 20px;
+}
+.alert:hover {
+    font-weight: bold;
+  }
+
+
+  // this is the part for inheritance //
+%message {
+    font-size: 50;
+    font-family: sans-serif;
+    font-weight: bold;
+    border-radius: 25px;
+    border: 2px solid #73AD21;
+    padding: 20px; 
+    width: auto;
+    text-align: center;
+    margin-top: 10px;
+     
+    }
+
+
+
+
+.news{
+
+    @extend %message;
+    
+}    
+
+.alerts{
+    @extend %message; 
+    border: 2px solid rgb(226, 72, 1);
+    
+}
+
+
+.happy{
+    @extend %message;
+    border: 2px solid rgb(26, 46, 223);
+
+}
+
+
+
+
+// Nesting -------this part is for nesting in index4//
+
+div{
+
+    ul{
+        font-size: 22px;
+    }
+       
+    
+}
+
+
+
+// For responsive page---------this is for a  line in index2 to disappear.//
+@media only screen and (max-width: 600px) {
+   .love1 {
+      visibility: hidden;
+    }
+  }
+
+
+
+  /*this part is for */
+#head{
+    text-align: center;
+}
+ 
+  .pic{
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
